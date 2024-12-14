@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 interface Project {
   name: string;
@@ -10,20 +12,20 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: "Project 1",
+    name: "Recipe Helper",
     description:
-      "This is a project that showcases my ability to build responsive UIs.",
+      "Helps create recipes for users given a prompt and/or ingredients list, as well as other parameters",
     image: "", // Add a real image URL
-    technologies: ["React", "TypeScript", "Tailwind"],
-    link: "https://example.com",
+    technologies: ["Vue", "Python / Flask", "AWS", "Nginx", "OpenAI GPT API", "Stability API"],
+    link: "https://robbiehume.com/recipe-app",
   },
   {
-    name: "Project 2",
+    name: "History Tutor",
     description:
-      "This project demonstrates back-end integrations and API design.",
+      "Helps the user learn more about historical topics and suggests additional related topics.",
     image: "", // Add a real image URL
-    technologies: ["Node.js", "Express", "MongoDB"],
-    link: "https://example.com",
+    technologies: ["Vue", "Python / Flask", "AWS", "Nginx", "OpenAI GPT API"],
+    link: "https://robbiehume.com/history-app",
   },
 ];
 
@@ -44,7 +46,7 @@ const PortfolioApp = () => {
     <div className="bg-gray-50 min-h-screen flex flex-col">
       {/* Navigation */}
       <nav className="py-4 px-6 bg-white shadow-md sticky top-0 z-50 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-gray-900">My Portfolio</h1>
+        <h1 className="text-2xl font-bold text-gray-900">Robbie Hume's Portfolio</h1>
         <ul className="flex space-x-6 text-gray-600 text-lg">
           <li>
             <a href="#about" className="hover:text-gray-900 transition-colors">
@@ -57,18 +59,12 @@ const PortfolioApp = () => {
             </a>
           </li>
           <li>
-            <a
-              href="#projects"
-              className="hover:text-gray-900 transition-colors"
-            >
+            <a href="#projects" className="hover:text-gray-900 transition-colors">
               Projects
             </a>
           </li>
           <li>
-            <a
-              href="#contact"
-              className="hover:text-gray-900 transition-colors"
-            >
+            <a href="#contact" className="hover:text-gray-900 transition-colors">
               Contact
             </a>
           </li>
@@ -81,8 +77,7 @@ const PortfolioApp = () => {
           Full Stack Software Engineer
         </h2>
         <p className="text-lg text-gray-700 max-w-2xl mb-6">
-          Building scalable and maintainable applications for businesses and
-          individuals.
+          {/* Building scalable and maintainable applications for businesses and individuals. */}
         </p>
         <a
           href="#projects"
@@ -96,12 +91,10 @@ const PortfolioApp = () => {
         <section id="about" className="mb-16 scroll-mt-24">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">About Me</h2>
           <p className="text-lg text-gray-700 leading-relaxed max-w-3xl">
-            I am a full stack software engineer with a passion for building
-            seamless user experiences, robust back-ends, and efficient systems.
-            My work often involves JavaScript, React, Node.js, and various
-            databases. I enjoy learning new technologies, improving performance,
-            and working with cross-functional teams to deliver exceptional
-            products.
+            I am a full stack software engineer with a passion for building seamless user experiences,
+            robust back-ends, and efficient systems. My work often involves JavaScript, React, Node.js,
+            and various databases. I enjoy learning new technologies, improving performance, and working
+            with cross-functional teams to deliver exceptional products.
           </p>
         </section>
 
@@ -172,24 +165,40 @@ const PortfolioApp = () => {
         <section id="contact" className="mb-16 scroll-mt-24">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Contact</h2>
           <p className="text-lg text-gray-700 leading-relaxed">
-            I’m always interested in hearing about new projects and
-            opportunities. Reach out if you have any questions or want to
-            discuss potential collaboration.
+            I’m always interested in hearing about new projects and opportunities.
+            Reach out if you have any questions or want to discuss potential collaboration.
           </p>
           <p className="text-lg mt-4">
             Email me at{" "}
             <a
-              href="mailto:example@example.com"
+              href="mailto:robbiehume.work@gmail.com"
               className="font-bold text-gray-900 underline hover:text-gray-700 transition-colors"
             >
-              example@example.com
+              robbiehume.work@gmail.com
             </a>
           </p>
         </section>
       </main>
 
       <footer className="py-6 text-center bg-gray-100 text-gray-600">
-        © {new Date().getFullYear()} My Portfolio. All rights reserved.
+        <div className="flex justify-center space-x-6">
+          <a
+            href="https://www.linkedin.com/in/robbiehume"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-gray-900"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          </a>
+          <a
+            href="https://github.com/robbiehume"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-gray-900"
+          >
+            <FontAwesomeIcon icon={faGithub} size="2x" />
+          </a>
+        </div>
       </footer>
     </div>
   );
