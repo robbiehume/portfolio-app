@@ -34,7 +34,7 @@ const projects: Project[] = [
   {
     name: "Portfolio App (this project)",
     description:
-      "Helps the user learn more about historical topics, suggests related topics, and provides a content-specific quiz.",
+      "Portfolio website to showcase skills, projects, and contact information",
     image: "", // Add a real image URL
     technologies: ["React", "TypeScript", "TailwindCSS", "AWS"],
     link: "https://robbiehume.com/",
