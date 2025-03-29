@@ -18,7 +18,7 @@ const projects: Project[] = [
     description:
       "Helps create recipes from a given a prompt, ingredient list, or other parameters.",
     image: "", // Add a real image URL
-    technologies: ["Vue", "Python (Flask)", "SQL", "OpenAI API", "Stability API", "AWS"],
+    technologies: ["Vue.js", "Python (Flask)", "SQL", "OpenAI API", "Stability API", "AWS"],
     link: "https://robbiehume.com/recipe-app",
     github: "https://github.com/robbiehume/recipe-app"
   },
@@ -27,7 +27,7 @@ const projects: Project[] = [
     description:
       "Helps the user learn more about historical topics, suggests related topics, and provides a content-specific quiz.",
     image: "", // Add a real image URL
-    technologies: ["Vue", "Node.js", "Express", "OpenAI API", "AWS", "Redis", "Docker"],
+    technologies: ["Vue.js", "Node.js", "Express", "OpenAI API", "AWS", "Redis", "Docker"],
     link: "https://robbiehume.com/history-app",
     github: "https://github.com/robbiehume/history-app"
   },
@@ -47,7 +47,7 @@ const skills = [
   "AWS",
   "Linux & Bash",
   "Scripting & Automation",
-  "Vue",
+  "Vue.js",
   "JavaScript",
   "HTML/CSS",
   "ChatGPT & OpenAI API",
@@ -131,13 +131,13 @@ const PortfolioApp = () => {
           </div>
           <div className="flex flex-col items-center max-w-max">
             <h2 className="text-4xl md:text-4xl font-bold text-gray-900 mb-6 whitespace-nowrap text-center">
-              Senior Full Stack Engineer
+              Senior Software Engineer
             </h2>
             <p className="text-md text-gray-700 max-w-2xl leading-relaxed mb-8 text-center max-w-fit">
               {/* Crafting scalable and maintainable applications that drive innovation and solve complex problems. */}
               {/* Passionate full stack developer with a backend focus. Driven to produce top-quality work. Seeking a motivated team to collaborate and grow with. */}
               {/* Developing high-performance applications that leverage automation, AI tools, and cloud technologies to drive innovation and efficiency. */}
-              Building scalable, high-performance applications with a focus on automation, resiliency, and optimized architecture.
+              Building scalable, cloud-based applications with a focus on automation, reliability, and efficient architecture.
             </p>
             <div className="flex justify-center w-full">
               <a
@@ -156,7 +156,7 @@ const PortfolioApp = () => {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">About Me</h2>
           <p className="text-lg text-gray-700 leading-relaxed ">
             <p className="mb-3">
-              I'm a Senior Full Stack Software Engineer at AT&T with 5 years of experience, specializing in backend with actively growing frontend skills. I have a proven track record of designing and deploying scalable, high-performance applications with a focus on automation, resiliency, and optimized architecture. Recently, I’ve focused on integrating AI tools to drive innovation and improve efficiency across my projects. 
+              I'm a Senior Software Engineer at AT&T with 5 years of experience, specializing in backend development (Python & AWS) with actively growing frontend skills. I have a proven track record of designing and deploying scalable, cloud-based applications with a focus on automation, reliability, and efficient architecture. Recently, I’ve focused on building and integrating AI tools to drive innovation and improve efficiency across my projects. 
             </p>
             
             <p>I thrive in collaborative environments, consistently delivering high-quality solutions by leveraging my strong communication skills, dedicated work ethic, and analytical mindset. I'm committed to continuous learning and actively seek opportunities to expand my knowledge and contribute to impactful projects. </p>
